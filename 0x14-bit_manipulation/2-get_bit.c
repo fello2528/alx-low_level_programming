@@ -14,10 +14,10 @@ int get_bit(unsigned long int n, unsigned int index)
 
 		if (index > num_bits - 1)
 			return (-1);
-		
+
 		mask = 1UL << index;
 		n &= mask;
 		n >>= index;
-									
+
 		return (n);
 }
